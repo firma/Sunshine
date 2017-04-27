@@ -1,15 +1,29 @@
+sunshine_organization_business_unit:
+    resource: "@SunshineOrganizationBundle/Controller/BusinessUnitController.php"
+    type:     annotation
+
+sunshine_organization_company:
+    resource: "@SunshineOrganizationBundle/Controller/CompanyController.php"
+    type:     annotation
+
+sunshine_organization_organization:
+    resource: "@SunshineOrganizationBundle/Controller/OrganizationController.php"
+    type:     annotation
+
+sunshine_ui:
+    resource: "@SunshineUIBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 sunshine_admin:
     resource: "@SunshineAdminBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /admin
 
 sunshine_organization:
     resource: "@SunshineOrganizationBundle/Controller/"
     type:     annotation
     prefix:   /
 
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
-#fos_user:
-    #resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+logout:
+    path: /logout
